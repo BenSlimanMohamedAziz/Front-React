@@ -1,0 +1,15 @@
+
+.main2 {
+    overflow: hidden;
+  }
+  .section2 {
+    padding: 8rem;
+    height: 100%;
+    display: flex;
+    margin-top: 30px;
+    align-items: center;
+    margin-left: 60px;
+    background-repeat: no-repeat;
+    justify-content: space-between;
+  }
+  

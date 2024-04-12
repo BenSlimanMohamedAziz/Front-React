@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Marko+One&display=swap");
+:root {
+	--mainColor: #1b1b1b81;
+	--mainColorLight: #1e3ebd;
+	--secondaryColor: #ac53ff;
+	--textColor: rgb(252, 252, 252);
+}
+html{
+    scroll-behavior: smooth;
+  }
+  header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 70px;
+	padding: 0 1.5rem;
+	background-color: var(--mainColor);
+	color: var(--textColor);
+}
+.sticky {
+  position: fixed;
+
+}
+nav a {
+	margin: 0 1rem;
+	color: var(--textColor);
+	font-family: "Marko One", serif;
+	text-decoration: none;
+}
+
+nav a:hover {
+	color: var(--secondaryColor);
+}
+
+header .nav-btn {
+	padding: 5px;
+	cursor: pointer;
+	background: transparent;
+	border: none;
+	outline: none;
+	color: var(--textColor);
+	visibility: hidden;
+	opacity: 0;
+	font-size: 1.8rem;
+}
+
+header div,
+nav {
+	display: flex;
+	align-items: center;
+}
+header img{
+  width: 70px;
+  border-radius: 8px;
+  height: 60px;
+}
+@media only screen and (max-width: 1024px) {
+	header .nav-btn {
+		visibility: visible;
+		opacity: 1;
+	}
+
+	header nav {
+		position: fixed;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		gap: 1.5rem;
+		background-color: var(--mainColor);
+		transition: 1s;
+		transform: translateY(-100vh);
+	}
+
+	header .responsive_nav {
+		transform: none;
+	}
+
+	nav .nav-close-btn {
+		position: absolute;
+		top: 2rem;
+		right: 2rem;
+	}
+
+	nav a {
+		font-size: 1.5rem;
+	}
+}

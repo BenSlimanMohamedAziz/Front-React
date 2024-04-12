@@ -1,0 +1,1299 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Rowdies:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Rowdies:wght@300;400;700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+/* src/App.css */
+div.info-cont {
+  background-color: rgb(226, 232, 235);
+}
+
+
+
+button {
+  margin-right: 5px;
+}
+
+
+
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  /* Arrange items vertically */
+  height: 100vh;
+  /* Adjust as needed */
+}
+
+.top-menu {
+  width: 100vw;
+  /* Adjust the width as needed */
+  background-color: #ffffff;
+  /* Example color for the top menu background */
+  padding: 10px;
+  /* Adjust padding as needed */
+  box-sizing: border-box;
+  /* Include padding in width calculation */
+  display: flex;
+  /* Align items horizontally */
+  float: right;
+
+  background: linear-gradient(to right,
+      #1C2536 0%,
+      #1C2536 14.6%,
+      #1C2536 10%,
+      #415477 100%);
+  text-align: right;
+  justify-content: right;
+}
+
+.top-menu a {
+  color: #fff;
+  /* Example color for the top menu links */
+  text-decoration: none;
+  margin-right: 10px;
+  font-family: "Rowdies", sans-serif;
+  /* Adjust spacing between menu items */
+}
+
+.menu-container {
+  display: flex;
+  flex: 1;
+  /* Expand to fill remaining space */
+}
+
+.left-menu {
+  height: 100%;
+  font-size: 1.1rem;
+  width: 305px;
+  border-right: 1px solid black;
+  background-color: #1C2536;
+  padding: 15px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+div.left-menu p {
+  color: #ffffff;
+}
+
+hr {
+  border: 1px solid rgb(125, 149, 253);
+  width: 90%;
+  z-index: 1;
+  margin: 12px;
+}
+
+h1 {
+  color: #ffffff;
+  font-size: 2.7rem;
+  text-align: center;
+  margin-left: -6px;
+  letter-spacing: 1px;
+  margin-top: -75px;
+  font-weight: bold;
+  margin-bottom: 70px;
+  font-family: "Dancing Script", cursive;
+}
+
+.left-menu a {
+  display: block;
+  margin: auto;
+  justify-content: center;
+  margin: 15px;
+
+  color: #c4c4c4;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.left-menu p {
+  display: flex;
+  margin-top: 250px;
+  text-align: center;
+  margin-bottom: 10px;
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px;
+  cursor: pointer;
+}
+
+
+.left-menu p:hover {
+  color: #df1638;
+  text-decoration: underline;
+}
+
+.left-menu FaSignOutAlt:hover {
+  color: #df1638;
+}
+
+.left-menu a:hover {
+  color: #5e96ff;
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
+}
+
+/* Add more styling as needed */
+
+/* Add this to your CSS file */
+
+.custom-overlay {
+  background-color: rgba(0, 0, 0, 0.564);
+}
+
+td,
+th {
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+img.event-img {
+  width: 300px;
+  border-radius: 10px;
+  margin: auto;
+  text-align: center;
+  height: 170px;
+  align-items: center;
+  align-content: center;
+  align-self: auto;
+}
+
+img.view-img-event {
+  width: 530px;
+  height: 330px;
+  border-radius: 10px;
+  margin: auto;
+  text-align: center;
+  align-items: center;
+  align-content: center;
+  align-self: auto;
+}
+
+.dropbtn {
+  background-color: #f0f0f031;
+  color: rgb(17, 17, 17);
+  padding: 6px;
+  border-radius: 8px;
+  border: none;
+  font-weight: bold;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  border-radius: 10px;
+}
+
+.dropdown-content {
+  display: none;
+  float: left;
+  text-align: left;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 150px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  margin-top: 1px;
+  margin-left: -3px;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.137);
+}
+
+.dropdown-content a {
+  color: black;
+  border-radius: 10px;
+  padding: 6px 6px;
+  width: 100%;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a.log_out {
+  color: black;
+  border-radius: 10px;
+  padding: 5px 10px;
+  width: 100%;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a.log_out:hover {
+  background-color: #df1638;
+  color: white;
+}
+
+.dropdown-content a:hover {
+  background-color: #3e8de7;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #91afdb6e;
+}
+
+
+.graphs {
+  margin: auto;
+  text-align: center;
+}
+
+.chart-container {
+  margin: auto;
+  margin-top: 80px;
+  border: 1px solid rgba(0, 0, 0, 0.266);
+  border-radius: 10px;
+  width: 800px;
+  height: 400px;
+  display: inline-block;
+  align-self: start;
+  vertical-align: middle;
+  align-items: center;
+  align-self: center;
+  box-shadow: 6px 7px 6px 0px rgba(0, 0, 0, 0.33);
+  filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.3));
+
+}
+
+.chart-container2 {
+  margin: auto;
+  margin-left: 40px;
+  margin-top: 80px;
+  border: 1px solid rgba(0, 0, 0, 0.266);
+  border-radius: 10px;
+  width: 360px;
+  height: 400px;
+  display: inline-block;
+  vertical-align: middle;
+  box-shadow: 6px 7px 6px 0px rgba(0, 0, 0, 0.33);
+  filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.3));
+  align-items: center;
+  align-self: center;
+}
+
+/*.left-menu a:focus, .left-menu a:active,.left-menu a:visited {
+  color: red;
+}  */
+
+
+/* Modal */
+.custom-modal {
+  position: absolute;
+  font-family: "Rowdies", sans-serif;
+  top: 50%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+  width: auto;
+  max-width: 100%;
+  margin: 20px auto;
+  padding: 20px;
+  background: linear-gradient(to right,
+      #c6d3ea 0%,
+      #a7b2c5 14.6%,
+      #a7b2c5 10%,
+      #3F5173 100%);
+  border-radius: 10px;
+  box-shadow: 6px 7px 6px 1px rgba(0, 0, 0, 0.33);
+  filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.3));
+}
+
+.custom-modal h3 {
+  margin: 5px;
+  color: rgb(24, 49, 124);
+  margin-bottom: 20px;
+  font-size: 2.1rem;
+  font-family: "Kanit", sans-serif;
+
+}
+
+.custom-modal h3 b {
+  color: #000000;
+  font-family: "Dancing Script", cursive;
+  text-decoration: underline;
+  font-size: 2.8rem;
+  font-weight: bold;
+}
+
+.custom-modal span {
+  font-size: 0.9rem;
+  float: right;
+  text-align: right;
+  margin-top: -10px;
+  color: white;
+}
+
+.custom-modal span.close-btn {
+  margin: auto;
+  text-align: center;
+  float: right;
+}
+
+.custom-modal span.close-btn p {
+  margin-top: -18px;
+  margin-right: -3px;
+  font-size: 1.8rem;
+  color: #ffffff;
+
+}
+
+.custom-modal span.close-btn p:hover {
+  color: rgb(255, 81, 81);
+}
+
+button {
+  background-color: #2568cc;
+  color: #ffffff;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 13px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.custom-modal p {
+  margin: 10px;
+  font-size: 1.3rem;
+  font-weight: 100;
+
+}
+
+.custom-modal b {
+  margin-right: 5px;
+  color: rgb(37, 56, 114);
+  font-size: 1.4rem;
+  font-weight: bolder;
+}
+
+.custom-modal img {
+  margin: 10px;
+  margin-top: -5px;
+  margin-bottom: 10px;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.close-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.modal-footer {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 120px;
+}
+
+.custom-edit-modal {
+  position: absolute;
+  top: 50%;
+  font-family: "Rowdies", sans-serif;
+  left: 55%;
+  transform: translate(-50%, -50%);
+  width: auto;
+  max-width: 90%;
+  margin: 20px auto;
+  padding: 25px;
+  background: linear-gradient(to right,
+      #b2c3e1 0%,
+      #b3c3de 14.6%,
+      #b3c3de 10%,
+      #3F5173 90%);
+  border-radius: 18px;
+  box-shadow: 6px 7px 6px 1px rgba(0, 0, 0, 0.33);
+  filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.3));
+}
+
+.custom-edit-modal .edit-dialog form {
+  width: 700px;
+  margin: auto;
+  font-size: 1.15rem;
+}
+
+.custom-edit-modal .edit-dialog form input {
+  display: block;
+  margin: auto;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.512);
+  font-size: 1rem;
+  padding: 8px;
+  font-weight: 100;
+  border: 1px solid rgba(0, 0, 0, 0.594);
+  margin-bottom: 10px;
+  width: 400px;
+  color: black;
+}
+
+
+.custom-edit-modal .edit-dialog form textarea {
+  display: block;
+  font-size: 1rem;
+  color: black;
+  background-color: rgba(255, 255, 255, 0.512);
+  font-weight: 100;
+  border-radius: 8px;
+  padding: 8px;
+  margin: auto;
+  margin-bottom: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.594);
+  width: 400px;
+}
+
+.custom-edit-modal .edit-dialog form label {
+  margin-top: 8px;
+}
+
+.col-25 {
+  float: left;
+  font-weight: bold;
+  width: 30%;
+  margin-top: 6px;
+}
+
+.custom-edit-modal .edit-dialog form div.col-25 {
+  font-size: 1.1rem;
+}
+
+.col-75 {
+  float: left;
+  width: 70%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.custom-edit-modal .edit-dialog div.btns {
+  margin: auto;
+  text-align: center;
+}
+
+.custom-edit-modal .edit-dialog div.btns button {
+  width: 170px;
+  margin: auto;
+  margin-top: 25px;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 13px;
+  margin-right: 20px;
+  font-weight: 100;
+  font-size: 1rem;
+  border: 1px solid rgba(0, 0, 0, 0.344);
+}
+
+
+.custom-edit-modal .edit-dialog div.btns button[type=submit] {
+  background-color: #0f8440;
+}
+
+.custom-edit-modal .edit-dialog div.btns button[type=submit]:hover {
+  background-color: #3ea569;
+}
+
+.custom-edit-modal .edit-dialog div.btns button[type=button] {
+  background-color: #c3c2c2;
+  color: #1c1b1b;
+}
+
+.custom-edit-modal .edit-dialog div.btns button[type=button]:hover {
+  background-color: #dab548;
+}
+
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+
+  .col-25,
+  .col-75,
+  input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+.custom-edit-modal h3 {
+  margin: 5px;
+  margin-bottom: 40px;
+  font-size: 2.0rem;
+
+}
+
+.custom-edit-modal h3 b {
+  color: #182665;
+  font-family: "Dancing Script", cursive;
+  text-decoration: underline;
+  font-size: 2.8rem;
+}
+
+.custom-edit-modal span.close-btn {
+  margin: auto;
+  text-align: center;
+  float: right;
+}
+
+.custom-edit-modal span.close-btn p {
+  margin-top: -18px;
+  margin-right: -3px;
+  font-size: 1.8rem;
+  color: #ffffff;
+}
+
+.custom-edit-modal span.close-btn p:hover {
+  color: rgb(255, 102, 102);
+}
+
+button {
+  background-color: #2568cc;
+  color: #ffffff;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.custom-edit-modal p {
+  margin: 15px;
+}
+
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+/*Modal*/
+.pagination {
+  font-size: 1rem;
+  margin: 8px;
+
+}
+
+.pagination .FaBackward {
+  margin-top: -9px;
+  margin-right: 4px;
+  color: #5a5a5a;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+.pagination .FaForward {
+  margin-top: -9px;
+  margin-left: 4px;
+  cursor: pointer;
+  color: #5a5a5a;
+  font-size: 1.5rem;
+}
+
+.pagination .FaForward:hover {
+  color: #5380db;
+}
+
+.pagination .FaBackward:hover {
+  color: #5380db;
+}
+
+table,
+th,
+td,
+tr {
+  border: 1px solid rgba(114, 114, 114, 0.533);
+  padding: 8px;
+}
+
+input[type=search] {
+  width: 300px;
+  padding: 5px;
+  border-radius: 8px;
+  border: 1px solid rgba(52, 51, 51, 0.46);
+}
+
+tr:nth-child(odd) {
+  background-color: #f8f8f8;
+  /* Light gray */
+}
+
+tr:nth-child(even) {
+  background-color: #b8b8b8c7;
+  /* White */
+
+}
+
+.FaEye,
+.FaEdit,
+.FaDelete,
+.FaList {
+  margin: 5px;
+  margin-right: 8px;
+  font-size: 1.4rem;
+  cursor: pointer;
+  color: #132e4d;
+}
+
+.FaEye:hover {
+  color: #0f9848;
+}
+
+.FaList:hover {
+  color: #1e61a0;
+}
+
+.FaEdit:hover {
+  color: #1e61a0;
+}
+
+.FaDelete:hover {
+  color: #e54444;
+}
+
+form div.add-form-event {
+  display: block;
+  margin-top: 10px;
+  border-radius: 15px;
+  box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.33);
+  filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.3));
+  font-family: "Rowdies", sans-serif;
+  margin: auto;
+  width: 1150px;
+  padding: 80px;
+  padding-bottom: 40px;
+  padding-top: 40px;
+  background: linear-gradient(to right,
+      #b2c3e1 0%,
+      #b3c3de 14.6%,
+      #b3c3de 10%,
+      #3F5173 90%);
+}
+
+form div.add-form-event input {
+  display: block;
+  margin: auto;
+  border-radius: 8px;
+  font-size: 1rem;
+  background-color: rgba(255, 255, 255, 0.527);
+  padding: 8px;
+  font-weight: 100;
+  border: 1px solid rgba(0, 0, 0, 0.594);
+  margin-bottom: 10px;
+  width: 535px;
+  color: black;
+}
+
+form div.add-form-event select {
+  display: block;
+  margin: auto;
+  border-radius: 8px;
+  font-size: 1rem;
+  background-color: rgba(255, 255, 255, 0.527);
+  padding: 8px;
+  font-weight: 100;
+  border: 1px solid rgba(0, 0, 0, 0.594);
+  margin-bottom: 10px;
+  width: 535px;
+  color: black;
+}
+
+
+form div.add-form-event textarea {
+  display: block;
+  margin: auto;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.527);
+  font-size: 1rem;
+  padding: 8px;
+  font-weight: 100;
+  border: 1px solid rgba(0, 0, 0, 0.594);
+  margin-bottom: 10px;
+  width: 535px;
+  color: black;
+}
+
+form div.add-form-event label {
+  margin-top: 8px;
+  color: #232323;
+}
+
+form div.add-form-event input:hover {
+  border-color: #2764a9;
+
+}
+
+form div.add-form-event textarea:hover {
+  border-color: #2764a9;
+}
+
+form div.add-form-event label {
+  font-size: 1.4rem;
+  letter-spacing: 1.5px;
+}
+
+form div.add-form-event div.btns {
+  margin: auto;
+  text-align: center;
+}
+
+
+form div.add-form-event div.btns button {
+  width: 175px;
+  margin: auto;
+  margin-top: 35px;
+  margin-bottom: -10px;
+  padding: 9px;
+  margin-right: 20px;
+  border-radius: 13px;
+  border: 1px solid rgba(0, 0, 0, 0.309);
+}
+
+form div.add-form-event div.btns button[type=submit] {
+  background-color: #2e6ea3;
+}
+
+form div.add-form-event div.btns button[type=submit]:hover {
+  background-color: #0f8440;
+}
+
+form div.add-form-event div.btns button[type=button] {
+  background-color: #c3c2c2;
+  color: #1c1b1b;
+}
+
+form div.add-form-event div.btns button[type=button]:hover {
+  background-color: #dab548;
+}
+
+form div.org-info {
+  display: flex;
+  justify-content: flex-start;
+  padding: 95px;
+  padding-bottom: 55px;
+  padding-top: 50px;
+  width: auto;
+  border-radius: 15px;
+  box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.33);
+  filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.3));
+  background: linear-gradient(to right,
+      #d8d9da 0%,
+      #d4d8de 14.6%,
+      #d5d8de 10%,
+      #b5b7b9 90%);
+}
+
+form div.ad-info {
+  display: flex;
+  justify-content: flex-start;
+  padding: 95px;
+  padding-bottom: 55px;
+  padding-top: 50px;
+  width: auto;
+  border-radius: 15px;
+  box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.33);
+  filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.3));
+  background: linear-gradient(to right,
+      #d8d9da 0%,
+      #d4d8de 14.6%,
+      #d5d8de 10%,
+      #b5b7b9 90%);
+}
+
+
+.image-container {
+  margin-right: 105px;
+  text-align: center;
+  font-family: "Dancing Script", cursive;
+  font-size: 3rem;
+
+}
+
+.image-container h2 {
+  font-size: 2.5rem;
+  font-weight: bolder;
+}
+
+
+form img.admin-img {
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.33);
+  filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.3));
+  margin-bottom: 15px;
+}
+
+.info-fields {
+  display: flex;
+  margin-top: 25px;
+  flex-direction: column;
+}
+
+.info-fields label,
+.info-fields input {
+  margin-bottom: 15px;
+}
+
+.info-fields label {
+  margin-top: 10px;
+}
+
+.info-fields input[type="password"] {
+  width: calc(100% - 30px);
+  /* Adjust the width as needed */
+}
+
+.info-fields input {
+  display: block;
+  font-family: "Rowdies", sans-serif;
+  margin: auto;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  padding: 8px;
+  font-weight: 100;
+  background-color: rgba(255, 255, 255, 0.527);
+  border: 1px solid rgba(0, 0, 0, 0.594);
+  margin-bottom: 10px;
+  width: 605px;
+  color: black;
+
+}
+
+.info-fields input:hover {
+  border-color: #2764a9;
+
+}
+
+.info-fields label {
+  width: 250px;
+  font-size: 1.3rem;
+  letter-spacing: 1.4px;
+  font-family: "Rowdies", sans-serif;
+}
+
+.info-fields div.btns {
+  margin: auto;
+  text-align: center;
+}
+
+
+.info-fields div.btns button {
+  width: 200px;
+  font-family: "Rowdies", sans-serif;
+  margin: auto;
+  font-weight: 100;
+  margin-top: 35px;
+  margin-bottom: -10px;
+  padding: 10px;
+  border-radius: 15px;
+  margin-right: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.309);
+}
+
+.info-fields div.btns button[type=submit] {
+  background-color: #2e60ac;
+}
+
+.info-fields div.btns button[type=submit]:hover {
+  background-color: #0f8440;
+}
+
+.info-fields div.btns button[type=button] {
+  background-color: #d5d5d5;
+  color: #454545;
+}
+
+.info-fields div.btns button[type=button]:hover {
+  background-color: #c31313;
+  color: #ededed;
+}
+
+.info-fields span.passShowHide {
+  /*float: right;*/
+  font-size: 0.8rem;
+  text-align: right;
+  font-family: "Rowdies", sans-serif;
+  font-weight: 100;
+  color: #1c1b1b;
+  text-decoration: underline;
+}
+
+.info-fields span.passShowHide:hover {
+  color: #ffffff;
+}
+
+/* Modal */
+.custom-modal-list {
+  position: absolute;
+  font-family: "Rowdies", sans-serif;
+  top: 50%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+  width: 60%;
+  max-width: 100%;
+  margin: 20px auto;
+  padding: 20px;
+  background: linear-gradient(to right,
+      #c6d3ea 0%,
+      #a7b2c5 14.6%,
+      #a7b2c5 10%,
+      #3F5173 100%);
+  border-radius: 10px;
+  box-shadow: 6px 7px 6px 1px rgba(0, 0, 0, 0.33);
+  filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.3));
+}
+
+.custom-modal-list h3 {
+  margin: 5px;
+  margin-bottom: 20px;
+  font-size: 2.1rem;
+  font-family: "Kanit", sans-serif;
+
+}
+
+.custom-modal-list h3 b {
+  color: #1e3274;
+  font-family: "Dancing Script", cursive;
+  font-size: 2.8rem;
+  font-weight: bold;
+}
+
+.custom-modal-list span {
+  font-size: 0.9rem;
+  float: right;
+  text-align: right;
+  margin-top: -10px;
+  color: white;
+}
+
+.custom-modal-list span.close-btn {
+  margin: auto;
+  text-align: center;
+  float: right;
+}
+
+.custom-modal-list span.close-btn p {
+  margin-top: -18px;
+  margin-right: -3px;
+  font-size: 1.8rem;
+  color: #ffffff;
+
+}
+
+.custom-modal-list span.close-btn p:hover {
+  color: rgb(255, 81, 81);
+}
+
+.custom-modal-list td {
+  font-size: 1.2rem;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+}
+
+
+.custom-modal-org {
+  position: absolute;
+  font-family: "Rowdies", sans-serif;
+  top: 50%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+  width: 810px;
+  max-width: 100%;
+  margin: 20px auto;
+  padding: 20px;
+  background: linear-gradient(to right,
+      #c6d3ea 0%,
+      #a7b2c5 14.6%,
+      #a7b2c5 10%,
+      #3F5173 100%);
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 6px 7px 6px 1px rgba(0, 0, 0, 0.33);
+  filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.3));
+}
+
+.custom-modal-org h3 {
+  margin: 5px;
+  color: rgb(24, 49, 124);
+  margin-bottom: 20px;
+  font-size: 2.1rem;
+  margin-bottom: 100px;
+  font-family: "Kanit", sans-serif;
+
+}
+
+.custom-modal-org h3 b {
+  color: #000000;
+  font-family: "Dancing Script", cursive;
+  text-decoration: underline;
+  font-size: 2.8rem;
+  font-weight: bold;
+}
+
+.custom-modal-org span {
+  font-size: 0.9rem;
+  float: right;
+  text-align: right;
+  margin-top: -10px;
+  color: white;
+}
+
+.custom-modal-org span.close-btn {
+  margin: auto;
+  text-align: center;
+  float: right;
+}
+
+.custom-modal-org span.close-btn p {
+  margin-top: -18px;
+  margin-right: -3px;
+  font-size: 1.8rem;
+  color: #ffffff;
+
+}
+
+.custom-modal-org span.close-btn p:hover {
+  color: rgb(255, 81, 81);
+}
+
+
+.custom-modal-org p {
+  margin: 15px;
+  margin-left: 28px;
+  color: #000000;
+  font-size: 1.3rem;
+  font-weight: 100;
+  float: left;
+
+}
+
+.custom-modal-org b {
+  margin-right: 5px;
+  color: rgb(37, 56, 114);
+  font-size: 1.4rem;
+  font-weight: bolder;
+}
+
+.custom-modal-org img {
+  margin-left: 25px;
+  margin-top: 20px;
+  width: 250px;
+  height: 250px;
+  border: 1px solid rgba(54, 54, 54, 0.685);
+  box-shadow: 6px 7px 6px 1px rgba(0, 0, 0, 0.33);
+  filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.212));
+  float: left;
+  border-radius: 50%;
+  margin-bottom: 18px;
+}
+
+.custom-modal-org a {
+  font-size: 1.3rem;
+  font-weight: 100;
+  text-decoration: none;
+  color: #000000;
+}
+
+.custom-modal-org a:hover {
+  text-decoration: underline;
+  color: #ffffff;
+}
+
+a.mailto {
+  text-decoration: none;
+}
+
+
+a.mailto:hover {
+  text-decoration: underline;
+  color: #1f5099;
+}
+
+.info-fields span.EditpassShowHide {
+  font-size: 1rem;
+  text-align: right;
+  font-family: "Rowdies", sans-serif;
+  font-weight: 100;
+  margin-top: -10px;
+  color: #c8ccf3;
+}
+
+.info-fields span.EditpassShowHide:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+
+form div.add-form-org {
+  display: block;
+  margin-top: 10px;
+  border-radius: 15px;
+  box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.33);
+  filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.3));
+  font-family: "Rowdies", sans-serif;
+  margin: auto;
+  width: 1100px;
+  padding: 80px;
+  padding-bottom: 40px;
+  padding-top: 40px;
+  background: linear-gradient(to right,
+      #b2c3e1 0%,
+      #b3c3de 14.6%,
+      #b3c3de 10%,
+      #3F5173 90%);
+}
+
+form div.add-form-org input {
+  display: block;
+  margin: auto;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  background-color: rgba(255, 255, 255, 0.527);
+  padding: 8px;
+  font-weight: 100;
+  border: 1px solid rgba(0, 0, 0, 0.594);
+  margin-bottom: 15px;
+  width: 535px;
+  color: black;
+}
+
+form div.add-form-org select {
+  display: block;
+  margin: auto;
+  border-radius: 8px;
+  font-size: 1rem;
+  background-color: rgba(255, 255, 255, 0.527);
+  padding: 8px;
+  font-weight: 100;
+  border: 1px solid rgba(0, 0, 0, 0.594);
+  margin-bottom: 10px;
+  width: 535px;
+  color: black;
+}
+
+
+form div.add-form-org textarea {
+  display: block;
+  margin: auto;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.527);
+  font-size: 1rem;
+  padding: 8px;
+  font-weight: 100;
+  border: 1px solid rgba(0, 0, 0, 0.594);
+  margin-bottom: 10px;
+  width: 535px;
+  color: black;
+}
+
+form div.add-form-org label {
+  margin-top: 8px;
+  color: #232323;
+}
+
+form div.add-form-org input:hover {
+  border-color: #2764a9;
+
+}
+
+form div.add-form-org textarea:hover {
+  border-color: #2764a9;
+}
+
+form div.add-form-org label {
+  font-size: 1.4rem;
+  letter-spacing: 1.5px;
+}
+
+form div.add-form-org div.btns {
+  margin: auto;
+  text-align: center;
+}
+
+
+form div.add-form-org div.btns button {
+  width: 175px;
+  margin: auto;
+  margin-top: 35px;
+  margin-bottom: -10px;
+  padding: 9px;
+  margin-right: 20px;
+  border-radius: 13px;
+  border: 1px solid rgba(0, 0, 0, 0.309);
+}
+
+form div.add-form-org div.btns button[type=submit] {
+  background-color: #2e6ea3;
+}
+
+form div.add-form-org div.btns button[type=submit]:hover {
+  background-color: #0f8440;
+}
+
+form div.add-form-org div.btns button[type=button] {
+  background-color: #c3c2c2;
+  color: #1c1b1b;
+}
+
+form div.add-form-org div.btns button[type=button]:hover {
+  background-color: #dab548;
+}
+
+form div.add-form-org span.EditpassShowHide {
+  color: rgb(22, 22, 22);
+  text-align: right;
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+
+form div.add-form-org span p {
+  margin-bottom: 10px;
+  margin-top: -2px;
+  margin-right: 60px;
+}
+
+
+form div.add-form-org span.EditpassShowHide:hover {
+  color: rgb(255, 255, 255);
+  text-decoration: underline;
+
+}
+
+form div.add-form-org .btns {
+  margin-top: -50px;
+}
+.mailtoBy{
+  text-decoration: none;
+  color: white;
+  font-size: 0.9rem;
+}
+.mailtoBy:hover{
+  text-decoration: underline;
+  color: #41d17d;
+}

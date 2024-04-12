@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Potta+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Marko+One&display=swap");
+
+.forms {
+    height: 100%;
+}
+
+.forms h2 {
+    text-align: center;
+    font-size: 55px;
+    color: whitesmoke;
+    margin: 40px;
+    margin-top: -10px;
+    font-family: "Dancing Script", cursive;
+}
+
+.forms Button {
+    margin: auto;
+    background-color: rgb(17, 160, 48);
+    /*width: 200px;*/
+    font-family: "Potta One", cursive;
+    font-size: 17px;
+    height: 50px;
+    color: black;
+    margin-bottom: -15px;
+}
+
+.forms Button:hover {
+    background-color: rgb(13, 139, 40);
+    color: white;
+}
+
+.forms .input {
+    margin: auto;
+    font-family: "Marko One", serif;
+    background: none;
+    color: black;
+    padding: 5px;
+    display: grid;
+}
+
+.forms {
+    background-color: rgba(15, 15, 15, 0.541);
+    border-radius: 15px;
+    border: 3px solid purple;
+    /* Couleur de départ */
+    border-radius: 10px;
+    /* Vous pouvez ajuster cela selon vos besoins */
+    animation: colorChange 5s infinite;
+    /* Réglez la durée et le type d'animation selon vos préférences */
+    padding: 60px;
+}
+
+.forms input {
+    margin: auto;
+    font-family: "Marko One", serif;
+    display: grid;
+    margin-bottom: 15px;
+    color: black;
+}
+
+.forms p {
+    font-size: 1rem;
+    color: rgb(214, 33, 33);
+    font-weight: bold;
+}
+
+@keyframes colorChange {
+    0% {
+        border-color: purple;
+    }
+
+    25% {
+        border-color: rgb(204, 203, 203);
+    }
+
+    50% {
+        border-color: rgb(197, 68, 236);
+    }
+
+    75% {
+        border-color: rgb(82, 46, 209);
+    }
+
+    100% {
+        border-color: rgb(92, 10, 117);
+    }
+}

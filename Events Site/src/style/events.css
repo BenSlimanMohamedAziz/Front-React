@@ -1,0 +1,399 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Denk+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Tapestry&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Marko+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Potta+One&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+
+h1 {
+  text-align: center;
+  font-family: "Tapestry", cursive;
+  font-size: 4em;
+  letter-spacing: 0.2em;
+  margin-bottom: 26px;
+  margin-top: 20px;
+  font-weight: 600;
+  font-style: oblique;
+  font-weight: bold;
+  background-image: linear-gradient(#ffffff, #a5a1a8);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.card-container {
+  background-color: rgba(222, 202, 255, 0.606);
+  width: 380px;
+  border: 1px solid rgba(0, 0, 0, 0.247);
+  display: inline-block;
+  overflow: hidden;
+  margin: auto;
+  cursor: pointer;
+  margin: 15px;
+  border-radius: 10px;
+  padding: 5px;
+  box-shadow: 0px 0px 15px -5px;
+  transition: 0.5s;
+  animation: ease-in;
+  margin-bottom: 200px;
+}
+
+.card-container:hover {
+  transform: scale(1.03);
+  box-shadow: 0px 0px 15px 0px;
+}
+
+.image-container img {
+  overflow: hidden;
+  border-radius: 10px;
+  height: 185px;
+  width: 100%;
+}
+
+.card-content {
+  text-align: center;
+  width: 95%;
+  margin-top: 0.5rem;
+}
+
+h3 {
+  font-size: 1.8rem;
+  font-family: "Dancing Script", cursive;
+  margin: 4px;
+  color: #095dac;
+  padding: 0;
+  font-weight: bold;
+}
+
+p {
+  margin: 5px;
+  line-height: 28px;
+  letter-spacing: 2px;
+  padding: 5px;
+  font-size: 0.9rem;
+  font-family: "Marko One", serif;
+}
+
+.card-title {
+  text-align: center;
+  color: rgb(27, 25, 25);
+  margin-bottom: 0.3rem;
+}
+
+.btn button {
+  font-family: "Marko One", serif;
+  display: flex;
+  background-color: rgb(240, 223, 255);
+  color: rgb(27, 25, 25);
+  margin-top: 18px;
+  margin-bottom: 10px;
+  width: 9em;
+  justify-content: center;
+}
+
+.btn button {
+  padding: 0.6rem;
+  border: 1px solid rgba(0, 0, 0, 0.219);
+  transition: 0.2s;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  border-radius: 5px;
+}
+
+.btn button:hover {
+  background: rgb(63, 120, 228);
+  transform: scale(1.1);
+}
+
+a {
+  text-transform: uppercase;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.btn button a:hover {
+  color: white;
+}
+
+.dateTxtS {
+  font-weight: bold;
+  color: #163897;
+  font-family: "Satisfy", cursive;
+  font-size: 1.2em;
+}
+
+.dateTxtE {
+  font-family: "Satisfy", cursive;
+  font-weight: bold;
+  color: #bd1010;
+  font-size: 1.2em;
+}
+
+.txtinfo {
+  font-family: "Potta One", cursive;
+  font-size: 0.9em;
+}
+
+a.txtinfoLink {
+  font-family: "Potta One", cursive;
+  text-decoration: none;
+  font-size: 0.9em;
+  font-weight: 100;
+}
+
+a.txtinfoLink:hover {
+  text-decoration: underline;
+  color: white;
+}
+
+.desc {
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.card-container hr {
+  width: 60%;
+  border: 0.5px solid rgba(252, 252, 252, 0.842);
+}
+
+
+/* Add padding to containers */
+.container3 {
+  padding: 16px;
+  background-color: white;
+}
+
+.container3 h2 {
+  font-size: 38px;
+  text-align: center;
+  font-family: "Potta One", cursive;
+  color: #2978c2;
+}
+
+.container3 p {
+  text-align: center;
+  font-size: 18px;
+}
+
+/* Full-width input fields */
+input[type=text],
+input[type=password],
+input[type=email],
+input[type=tel] {
+  width: 100%;
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.349);
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus,
+input[type=password]:focus,
+input[type=email],
+input[type=tel] :focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+.container3 hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+  width: 92%;
+}
+
+/* Set a style for the submit button */
+.registerbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity: 1;
+}
+
+/* Add a blue text color to links */
+a {
+  color: dodgerblue;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+}
+
+/* Modal */
+.custom-modal {
+  position: absolute;
+  font-family: "Rowdies", sans-serif;
+  top: 50%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+  width: auto;
+  max-width: 100%;
+  margin: 20px auto;
+  padding: 20px;
+  background: linear-gradient(to right,
+      #c6d3ea 0%,
+      #a7b2c5 14.6%,
+      #a7b2c5 10%,
+      #3F5173 100%);
+  border-radius: 10px;
+  box-shadow: 6px 7px 6px 1px rgba(0, 0, 0, 0.33);
+  filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.3));
+}
+
+.custom-modal h3 {
+  margin: 5px;
+  color: rgb(24, 49, 124);
+  margin-bottom: 20px;
+  font-size: 2.1rem;
+  font-family: "Kanit", sans-serif;
+
+}
+
+.custom-modal h3 b {
+  color: #000000;
+  font-family: "Dancing Script", cursive;
+  text-decoration: underline;
+  font-size: 2.8rem;
+  font-weight: bold;
+}
+
+.custom-modal span {
+  font-size: 0.9rem;
+  float: right;
+  text-align: right;
+  margin-top: -10px;
+  color: white;
+}
+
+.custom-modal span.close-btn {
+  margin: auto;
+  text-align: center;
+  float: right;
+}
+
+.custom-modal span.close-btn p {
+  margin-top: -18px;
+  margin-right: -3px;
+  font-size: 1.8rem;
+  color: #ffffff;
+
+}
+
+.custom-modal span.close-btn p:hover {
+  color: rgb(255, 81, 81);
+}
+
+button {
+  background-color: #2568cc;
+  color: #ffffff;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 13px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.custom-modal p {
+  margin: 10px;
+  font-size: 1.3rem;
+  font-weight: 100;
+
+}
+
+.custom-modal b {
+  margin-right: 5px;
+  color: rgb(37, 56, 114);
+  font-size: 1.4rem;
+  font-weight: bolder;
+}
+
+.custom-modal img {
+  margin: 10px;
+  margin-bottom: 10px;
+}
+
+
+div.filters {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 25px;
+  font-family: "Marko One", serif;
+  margin-top: 25px;
+  color: #000000;
+}
+
+div.filters input {
+  width: 250px;
+  padding: 10px;
+  height: 15px;
+  border: 1px solid rgba(49, 49, 49, 0.945);
+  background-color: #ffffff9c;
+  border-radius: 10px;
+  color: #000000;
+}
+div.filters input[type='search']  {
+  width: 250px;
+  padding: 10px;
+  color: #000000;
+  height: 35px;
+  border: 1px solid rgba(49, 49, 49, 0.945);
+  background-color: #ffffffbd;
+  border-radius: 10px;
+}
+
+div.filters input[type='number'] {
+  width: 80px;
+  color: #000000;
+}
+
+div.filters select {
+  width: 250px;
+  padding: 5px;
+  height: 35px;
+  border: 1px solid rgba(49, 49, 49, 0.945);
+  background-color: #ffffff9c;
+  font-family: "Marko One", serif;
+  border-radius: 10px;
+}
+
+div.filters label {
+  color: white;
+  font-size: 1.15rem;
+  font-weight: bold;
+  margin-left: 40px;
+  margin-right: 10px;
+  margin-top: 5px;
+}
+
+div.filters ::placeholder {
+  color: rgb(14, 14, 14);
+  opacity: 1; /* Firefox */
+  font-size: 0.75rem;
+  font-family: "Marko One", serif;
+}
+
+.searchIcon{
+  margin-left:-25px;
+margin-top: 10px;
+font-size: 0.9rem;
+}
